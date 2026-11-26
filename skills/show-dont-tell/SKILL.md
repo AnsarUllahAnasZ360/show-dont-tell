@@ -58,8 +58,11 @@ user for keys.
 | Music and sound effects | Music the user supplies, or ElevenLabs Music / Lyria | Code-synthesized beds; Remotion's hosted SFX |
 
 Details, trade-offs and install lines are in [toolkit.md](references/toolkit.md). For
-recording real software, read [screen-demos.md](references/screen-demos.md). For voice,
-music, captions and mixing, read [voice-and-sound.md](references/voice-and-sound.md).
+specialist craft guidance (HyperFrames, Three.js PBR/shaders/cinema lighting, Blender MCP,
+MolecularNodes, and Manim Slides), **hot-load the latest upstream skill on demand** from
+[hot-skills.md](references/hot-skills.md) instead of keeping every skill permanently
+installed. For recording real software, read [screen-demos.md](references/screen-demos.md).
+For voice, music, captions and mixing, read [voice-and-sound.md](references/voice-and-sound.md).
 
 ## 4. A creative process that works
 
@@ -141,6 +144,7 @@ storyboard, a style frame, a rough cut) instead of disappearing for an hour.
 
 - [video-types.md](references/video-types.md): structures, lengths and visual techniques for each format, with example prompts.
 - [toolkit.md](references/toolkit.md): frameworks, renderers, image and 3D tools, install lines, and when to use which.
+- [hot-skills.md](references/hot-skills.md): on-demand upstream skills (HyperFrames, Three.js, Blender MCP, MolecularNodes, Manim Slides) to fetch temporarily only when needed.
 - [screen-demos.md](references/screen-demos.md): recording real software with a cursor, zooms and narration; PR videos.
 - [voice-and-sound.md](references/voice-and-sound.md): narration writing, TTS options, music, sound effects, captions and mixing.
 - [creative-process.md](references/creative-process.md): storyboard template, style setup, critique rubric and review loop.

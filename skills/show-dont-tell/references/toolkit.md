@@ -103,8 +103,16 @@ Cap when auth flows make automation fragile.
 ## 3D
 
 - `@remotion/three` with React Three Fiber for 3D inside a Remotion scene. Drive camera
-  and objects from the frame number, not from `useFrame` clocks.
-- Blender through an MCP server for heavier modeling and rendering.
+  and objects from the frame number (`useCurrentFrame()`), not from `useFrame` clocks.
+- Keep **WebGL2 + `pmndrs/postprocessing`** strictly separate from **Three.js WebGPU +
+  TSL** (`THREE.WebGPURenderer` uses native TSL `RenderPipeline` — `pass()`, `bloom()`,
+  `dof()` — and breaks with `pmndrs/postprocessing`).
+- **Blender via `mcp-for-blender`** (`uvx mcp-for-blender`) for studio-lit raytraced 3D,
+  plus **MolecularNodes** for PDB/AlphaFold protein cinema.
+- **Web molecular viewers:** Use `molstar` or `3dmol` when publishing interactive 3D
+  protein/ligand structures on web pages.
+- Hot-load the latest upstream Three.js, Blender MCP, MolecularNodes, HyperFrames, and
+  Manim Slides skills on demand from [hot-skills.md](hot-skills.md).
 
 ## Images
 
